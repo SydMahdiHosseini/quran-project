@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::after, *::after {
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f7f7;
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+justify-content: center;
+scroll-behavior: smooth;
+
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.loading-suspens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.sura-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-right: 2rem;
+}
+
+.sura-card {
+  width: 200px;
+  height: 300px;
+ background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url("./assets//images//back-card.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner-home {
+ width: 100%;
+ height: 50vh;
+ background-image: url("./assets/images/quranBanner.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ border-radius: 0 0 1rem 1rem;
+ background-size: cover;
+}
+
+.banner-image {
+  object-fit: cover;
+  border-radius: 0 0 1rem 1rem;
+}
+
+
+.sura-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  position: relative;
+}
+
+.sura-head {
+  width: 100%;
+  height: 100px;
+  background-image: url("./assets//images//quranIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sura-description {
+  margin-top: 1rem;
+}
+
+.show-sura {
+  color: black;
+}
+
+
+.quran-page-text {
+text-align: end;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 10vh;
+}
+
+.nav-bar {
+  width: 100vw;
+  height: 10vh;
+  background-color: #ffff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.pages {
+  margin-top: 10vh;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-input{
+  padding : 0.5rem 1.5rem;
+  border: 2px solid #989c9c;
+  border-radius: 1rem;
+}
+
+.search-input input:focus {
+  border: 2px solid #4f4ca5 !important;
+}
+
+.setting {
+  width: 50px;
+  height:50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.ayeh-line {
+  line-height: 2rem;
+}
+
+.num-ayeh {
+  color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+
+.button-page {
+  width: 60px;
+  height: 60px;
+  background-color: #4f4ca5;
+  border-radius: 50%;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 5vw;
+  bottom: 20vh;
+  font-size: 10px;
+}
+.next {
+  bottom: 10vh;
+}
+.button-page p {
+  color :rgb(255, 255, 255)
+}
+
+.ayeh-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid rgb(225, 214, 214);
+  background-image: url("./assets/images//back-card.png");
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 2rem;
+  /* text-align: center; */
+  padding: 0 2rem 1rem 1rem;
+}
+
+
+.paly-icon {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.paly-icon:hover {
+  transform: scale(1.1);
+}
+
+.paly-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.audio-container {
+   position: fixed;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 10vh;
+   width: 100%;
+   background-color: rgb(251, 251, 251);
+}
